@@ -1,0 +1,41 @@
+import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
+import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
+import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
+import { CadastroProdutosComponent } from './cadastro-produtos/cadastro-produtos.component';
+import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
+import { CadastroCategoriaComponent } from './cadastro-categoria/cadastro-categoria.component';
+import { CardapioComponent } from './cardapio/cardapio.component';
+import { EntrarComponent } from './entrar/entrar.component';
+import { CadastrarComponent } from './cadastrar/cadastrar.component';
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { ContatoComponent } from './contato/contato.component';
+import { HomeComponent } from './home/home.component';
+import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
+import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
+import { CarrinhoComponent } from './carrinho/carrinho.component';
+
+const routes: Routes = [
+  { path: "", redirectTo: "home", pathMatch: "full" },
+  { path: "home", component: HomeComponent },
+  { path: "sobre-nos", component: SobreNosComponent },
+  { path: "contato", component: ContatoComponent },
+  { path: "cadastrar", component: CadastrarComponent },
+  { path: "entrar", component: EntrarComponent },
+  { path: "cardapio", component: CardapioComponent },
+  { path: "cadastro-categoria", component: CadastroCategoriaComponent },
+  { path: "categoria-edit/:id", component: CategoriaEditComponent },
+  { path: "categoria-delete/:id", component: CategoriaDeleteComponent },
+  { path: "cadastro-produtos", component: CadastroProdutosComponent },
+  { path: "produto-edit/:id", component: ProdutoEditComponent },
+  { path: "produto-delete/:id", component: ProdutoDeleteComponent },
+  { path: "usuario-edit/:id", component: UsuarioEditComponent },
+  { path: "carrinho/:id", component: CarrinhoComponent}
+
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }

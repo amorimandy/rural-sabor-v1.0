@@ -1,0 +1,72 @@
+.geral{
+  background: url(https://i.imgur.com/58NVmAi.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  /* max-width: 1200px;
+  padding: 0 40px; */
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}
+
+h1, h5, h6{
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* botão */
+
+.buttons {
+  margin: 10%;
+  text-align: center;
+}
+
+.btn-hover {
+  width: 120px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 20px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+/* .btn-hover:focus {
+  outline: none;
+} */
+
+.btn-hover.color-8 {
+  background-image: linear-gradient(to right, #56693e, #47812ecc, #24570ecc, #21530ccc);
+  box-shadow: 4px 4px 30px 4px rgba(255, 255, 255, 0.363);
+}
+
+.mt-100{
+  margin-top: 100px;
+}

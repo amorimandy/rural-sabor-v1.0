@@ -1,0 +1,98 @@
+.br-50 {
+  border-radius: 50%;
+}
+
+#imagem {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  opacity: 0.3;
+}
+
+.card {
+  cursor: pointer;
+  width: 1000px;
+  height: 340px;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+}
+
+.front img {
+  height: 100%;
+}
+
+.front {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.back {
+  background: #f1f1f1;
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.back-content {
+  color: #2c3e50;
+  text-align: center;
+  width: 100%;
+  font-size: 13px;
+}
+
+.sm {
+  margin: 10px 0;
+}
+
+.sm a {
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius: 50%
+}
+
+.sm a:hover {
+  background: #2c3e50;
+  color: white;
+}
+
+.card:hover>.front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover>.back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.img-fluid {
+  -webkit-filter: grayscale(100%);
+
+}
+
+.img-fluid:hover {
+  -webkit-filter: grayscale(0%);
+  transition: 0.5s;
+}
+
+#parceiros {
+  color: rgba(37, 113, 60, 0.692);
+
+}
+
+#parceirosGen {
+  background-color: white;
+}

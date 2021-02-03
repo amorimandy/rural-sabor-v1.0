@@ -1,0 +1,99 @@
+.mt-100 {
+  margin-top: 100px;
+}
+
+.menu {
+  padding: 0 10px 30px 10px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 30px 40px;
+}
+
+.food-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr;
+  grid-template-rows: auto 1fr;
+  position: relative;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0, 15);
+}
+
+.food-items>img {
+  position: relative;
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+}
+
+.details {
+  padding: 20px 20px;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 18px;
+  -ms-grid-rows: auto 15px 1fr 15px 50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0 0 25px 25px;
+  border-style: groove;
+}
+
+p {
+  color: #000000;
+  font-size: 18px;
+  text-align: justify;
+}
+
+a {
+  background-color: #CB202D;
+  display: block;
+  color: white;
+  width: 100%;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  bottom: 0;
+  font-size: 20px;
+  padding: 30px 0;
+}
+
+.d-line {
+  display: inline;
+}
+
+
+/* botão */
+
+.buttons {
+  margin: 10%;
+  text-align: center;
+}
+
+.btn-hover {
+  width: 220px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  color: white;
+  border-radius: 20px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover.color-8 {
+  background-image: linear-gradient(to right, #56693e, #47812ecc, #24570ecc, #21530ccc);
+  box-shadow: 4px 4px 30px 4px rgba(255, 255, 255, 0.363);
+}

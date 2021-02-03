@@ -1,0 +1,25 @@
+<div id="bg" class="mt-100">
+  <div class="menu m-5">
+    <div class="food-items mt-4 mb-4">
+      <img src="{{produto.foto}}" alt="">
+      <div class="details">
+        <div class="details-sub">
+          <div class="container d-flex m-1">
+            <div class="col-md-6">
+              <h4>{{produto.nome}}</h4>
+            </div>
+            <div class="col-md-6">
+              <h4 class="preco">R$ {{produto.preco}}</h4>
+            </div> 
+          </div>
+          <p> Descrição: {{produto.descricao}}.</p>
+          <p> Quantidade: </p>
+          <button (click)='menos()' class="btn btn-danger"> - </button>
+          <input [(ngModel)]='qtd'> 
+          <button (click)='mais()' class="btn btn-success"> + </button>
+          <button (click)='comprar()' class="btn btn-info ml-5">Adicionar produto</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
