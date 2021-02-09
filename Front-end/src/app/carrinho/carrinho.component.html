@@ -15,9 +15,9 @@
           <p> Descrição: {{produto.descricao}}.</p>
           <p> Quantidade: </p>
           <button (click)='menos()' class="btn btn-danger"> - </button>
-          <input [(ngModel)]='qtd'> 
+          <input class="text-center" [(ngModel)]='qtd'> 
           <button (click)='mais()' class="btn btn-success"> + </button>
-          <button (click)='comprar()' class="btn btn-info ml-5">Adicionar produto</button>
+          <button (click)='comprar()' class="btn btn-success ml-5">Comprar produtos</button>
         </div>
       </div>
     </div>

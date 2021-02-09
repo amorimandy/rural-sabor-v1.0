@@ -48,7 +48,7 @@
           <div class="form-group">
             <label for="titulo">Nome</label>
             <input [(ngModel)]='produto.nome' type="text" class="form-control" id="titulo"
-              placeholder="Digite o título">
+              placeholder="">
           </div>
 
           <div class="form-group">
@@ -63,7 +63,7 @@
           <div class="form-group">
             <label for="texto">Preço</label>
             <textarea [(ngModel)]='produto.preco' class="form-control" name="preco" id="preco" rows="1"></textarea>
-            <div style="color: red; font-size: 75%;">
+            <div style="color: red; font-size: 80%;">
               Utilize ponto '.' para separar reais de centavos!! (ex.: 5.99)
             </div>
           </div>
@@ -74,7 +74,7 @@
           <div class="form-group">
             <label for="texto">Disponibilidade</label>
             <select class="form-control" name="disp" id="disp" [(ngModel)]='produto.disponibilidade'>
-              <option>Selecione seu tipo de produção:</option>
+              <option>Selecione o status de seu produto:</option>
               <option value="true">Disponível</option>
               <option value="false">Não disponível</option>
             </select>

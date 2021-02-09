@@ -18,26 +18,26 @@ export class CategoriaService {
   }
 
   getAllCategoria(): Observable<Categoria[]> {
-    return this.http.get<Categoria[]>('http://localhost:8080/cat', this.token)
+    return this.http.get<Categoria[]>('https://rural-sabor.herokuapp.com/cat', this.token)
   }
 
   getByIdCategoria(id:number): Observable<Categoria>{
-    return this.http.get<Categoria>(`http://localhost:8080/cat/${id}`, this.token)
+    return this.http.get<Categoria>(`https://rural-sabor.herokuapp.com/cat/${id}`, this.token)
   }
 
   getByNomeCategoria(categoria : string): Observable<Categoria[]>{
-    return this.http.get<Categoria[]>(`http://localhost:8080/cat/categoria/${categoria}`, this.token)
+    return this.http.get<Categoria[]>(`https://rural-sabor.herokuapp.com/cat/categoria/${categoria}`, this.token)
   }
 
   postCategoria(categoria: Categoria): Observable<Categoria> {
-    return this.http.post<Categoria>('http://localhost:8080/cat', categoria, this.token)
+    return this.http.post<Categoria>('https://rural-sabor.herokuapp.com/cat', categoria, this.token)
   }
 
   putCategoria(categoria: Categoria): Observable<Categoria> {
-    return this.http.put<Categoria>('http://localhost:8080/cat', categoria, this.token)
+    return this.http.put<Categoria>('https://rural-sabor.herokuapp.com/cat', categoria, this.token)
   }
 
   deleteCategoria(id: number) {
-    return this.http.delete(`http://localhost:8080/cat/${id}`, this.token)
+    return this.http.delete(`https://rural-sabor.herokuapp.com/cat/${id}`, this.token)
   }
 }

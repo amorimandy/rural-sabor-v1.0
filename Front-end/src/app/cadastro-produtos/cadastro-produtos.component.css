@@ -22,7 +22,7 @@
 }
 
 .food-items>img {
-  position: relative;
+  height: auto;
   width: 100%;
   border-radius: 25px 25px 0 0;
 }

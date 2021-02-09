@@ -17,28 +17,28 @@ export class ProdutoService {
   }
 
   getAllProduto(): Observable<Produto[]> {
-    return this.http.get<Produto[]>('http://localhost:8080/prod', this.token)
+    return this.http.get<Produto[]>('https://rural-sabor.herokuapp.com/prod', this.token)
   }
   getByIdProduto(id: number): Observable<Produto> {
-    return this.http.get<Produto>(`http://localhost:8080/prod/${id}`, this.token)
+    return this.http.get<Produto>(`https://rural-sabor.herokuapp.com/prod/${id}`, this.token)
   }
   getByNomeProduto(nome : string): Observable<Produto[]>{
-    return this.http.get<Produto[]>(`http://localhost:8080/prod/nome/${nome}`, this.token)
+    return this.http.get<Produto[]>(`https://rural-sabor.herokuapp.com/prod/nome/${nome}`, this.token)
   }
   getByRegiaoProduto(regiao : string): Observable<Produto[]>{
-    return this.http.get<Produto[]>(`http://localhost:8080/prod/regiao/${regiao}`, this.token)
+    return this.http.get<Produto[]>(`https://rural-sabor.herokuapp.com/prod/regiao/${regiao}`, this.token)
   } 
 
   postProduto(produto: Produto): Observable<Produto> {
-    return this.http.post<Produto>('http://localhost:8080/prod', produto, this.token)
+    return this.http.post<Produto>('https://rural-sabor.herokuapp.com/prod', produto, this.token)
   }
 
   putProduto(produto: Produto): Observable<Produto> {
-    return this.http.put<Produto>('http://localhost:8080/prod', produto, this.token)
+    return this.http.put<Produto>('https://rural-sabor.herokuapp.com/prod', produto, this.token)
   }
   
   deleteProduto(id: number) {
-    return this.http.delete(`http://localhost:8080/prod/${id}`, this.token)
+    return this.http.delete(`https://rural-sabor.herokuapp.com/prod/${id}`, this.token)
   }
 
 }
