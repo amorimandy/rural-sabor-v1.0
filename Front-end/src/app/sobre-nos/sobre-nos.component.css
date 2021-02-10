@@ -22,7 +22,7 @@
   overflow: hidden;
   backface-visibility: hidden;
   position: absolute;
-  transition: transform .6s linear;
+  transition: transform 0.6s linear;
 }
 
 .front img {
@@ -58,7 +58,7 @@
   color: #2c3e50;
   font-size: 18px;
   transition: 0.4s;
-  border-radius: 50%
+  border-radius: 50%;
 }
 
 .sm a:hover {
@@ -80,7 +80,6 @@
 
 .img-fluid {
   -webkit-filter: grayscale(100%);
-
 }
 
 .img-fluid:hover {
@@ -90,7 +89,6 @@
 
 #parceiros {
   color: rgba(37, 113, 60, 0.692);
-
 }
 
 #parceirosGen {
