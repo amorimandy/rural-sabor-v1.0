@@ -1,34 +1,13 @@
-*{
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", sans-serif;
-  box-sizing: border-box;
-  text-decoration: none;
+.card{
+  width: 70%;
 }
 
-.geral{
-  background: url('https://i.imgur.com/hAXFYwx.jpg') no-repeat center;
-  background-size: cover;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.card-header {
+  padding: 0px;
+  margin: 0px;
 }
 
-.container{
-  max-width: 1200px;
-  padding: 0 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.accordion{
-  width: calc(50% - 20px);
-}
-
-.card-link{
+.card-link {
   margin: 0;
   background-color: rgba(255, 158, 1, 0.678);
   display: flex;
@@ -39,10 +18,9 @@
   font-size: 20px;
   font-weight: 600;
   align-items: center;
-  justify-content: space-between;
 }
 
-.card-body{
+.card-body {
   background-color: rgba(230, 199, 23, 0.685);
   color: black;
   line-height: 26px;
@@ -52,20 +30,13 @@
   text-align: justify;
 }
 
-.card-body:target .text{
+.card-body:target .text {
   height: auto;
   opacity: 1;
   padding: 20px;
   margin: 12px 0;
 }
 
-@media screen and (max-width:1080px){
-  .container{
-    max-width: 600px;
-  }
-
-  .image, .accordion{
-    width: 100%;
-    margin: 20px 0;
-  }
+.mt-150{
+  margin-top: 150px;
 }
